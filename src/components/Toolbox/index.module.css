@@ -1,0 +1,29 @@
+.toolboxContainer {
+  @apply absolute w-64 p-5 rounded-md top-1/4 left-5;
+  box-shadow: theme("colors.shadow1");
+  border: 1px solid theme("colors.border1");
+  background-color: theme("colors.background1");
+
+  .toolItem {
+    @apply mb-5;
+
+    .toolText {
+      font-size: 11px;
+      color: theme("colors.text1");
+    }
+
+    .itemContainer {
+      @apply flex justify-between mt-2;
+
+      .colorBox {
+        @apply w-5 h-5 mr-1 rounded-sm cursor-pointer;
+
+        &:hover,
+        &.active {
+          border: 1.5px solid theme("colors.border2");
+          box-shadow: theme("colors.shadow2");
+        }
+      }
+    }
+  }
+}
