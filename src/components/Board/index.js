@@ -8,7 +8,6 @@ const Board = () => {
     const canvas = canvasRef.current;
     const context = canvas.getContext("2d");
 
-    //when mounting
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
   }, []);

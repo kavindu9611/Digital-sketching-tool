@@ -9,7 +9,7 @@
     @apply cursor-pointer flex justify-center items-center h-10 w-10 rounded-md;
 
     &:hover,
-    &:active {
+    &.active {
       background-color: theme("colors.text2");
     }
   }
