@@ -1,43 +1,43 @@
-import StyleSheet from "./index.module.css";
+import styles from "./index.module.css";
 import { COLORS } from "@/constants";
 
 const Toolbox = () => {
   const updateBrushSize = (e) => {};
   return (
-    <div className={StyleSheet.toolboxContainer}>
-      <div className={StyleSheet.toolItem}>
-        <h4 className={StyleSheet.toolText}>Color</h4>
-        <div className={StyleSheet.itemContainer}>
+    <div className={styles.toolboxContainer}>
+      <div className={styles.toolItem}>
+        <h4 className={styles.toolText}>Color</h4>
+        <div className={styles.itemContainer}>
           <div
-            className={StyleSheet.colorBox}
+            className={styles.colorBox}
             style={{ backgroundColor: COLORS.BLACK }}
           />
           <div
-            className={StyleSheet.colorBox}
+            className={styles.colorBox}
             style={{ backgroundColor: COLORS.RED }}
           />
           <div
-            className={StyleSheet.colorBox}
+            className={styles.colorBox}
             style={{ backgroundColor: COLORS.GREEN }}
           />
           <div
-            className={StyleSheet.colorBox}
+            className={styles.colorBox}
             style={{ backgroundColor: COLORS.BLUE }}
           />
           <div
-            className={StyleSheet.colorBox}
+            className={styles.colorBox}
             style={{ backgroundColor: COLORS.ORANGE }}
           />
           <div
-            className={StyleSheet.colorBox}
+            className={styles.colorBox}
             style={{ backgroundColor: COLORS.YELLOW }}
           />
         </div>
       </div>
 
-      <div className={StyleSheet.toolItem}>
-        <h4 className={StyleSheet.toolText}>Brush Size</h4>
-        <div className={StyleSheet.itemContainer}>
+      <div className={styles.toolItem}>
+        <h4 className={styles.toolText}>Brush Size</h4>
+        <div className={styles.itemContainer}>
           <input
             type="range"
             min={1}
